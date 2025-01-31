@@ -1,17 +1,18 @@
 import "./App.css";
 import Footer from "./components/Footer";
-import Login from "./components/Login";
+// import Login from "./components/Login";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
     <>
-      <div className="flex w-full flex-row">
-        {/* <div className="w-full flex  justify-content lg:w-1/2">
-          <Login />
+      <div>
+        <div className="w-full flex flex-col min-h-screen">
+          {/* <div className="w-full flex justify-content object-center">
+            <Login />
+          </div> */}
+          <HomePage />
         </div>
-        {/* <div className=" hidden lg:flex h-full  justify-content bg-gray-400">
-          <div className="w-60 h-60 bg-">hello react</div>
-        </div> */}
       </div>
       <Footer />
     </>
