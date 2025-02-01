@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
     console.log("Login clicked");
   };
-
+  // Login Form template
   return (
     <form
       onSubmit={handleSubmit}

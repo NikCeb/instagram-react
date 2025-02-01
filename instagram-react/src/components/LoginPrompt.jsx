@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { X } from "lucide-react";
 
 function LoginPrompt({ hideLoginHandler }) {
+  // For Login Prompt in homepage
   return (
     <>
       <div

@@ -32,6 +32,7 @@ function PostGrid({ showLoginHandler }) {
                   className="w-full  h-full object-cover transition duration-300 ease-in-out group-hover:brightness-50"
                 />
               </a>
+              {/* Likes and Comments Icon */}
               <a href="#" onClick={showLoginHandler}>
                 <div className="z-0 absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex items-center justify-center space-x-10 text-white">
                   <div className="flex items-center space-x-2 text-bold">
