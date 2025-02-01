@@ -1,7 +1,7 @@
 import props from "prop-types";
 
 const InputField = ({ type, id, value, onChange, label }) => (
-  <div className="w-[80%] flex items-center justify-center relative text-center">
+  <div className="w-[70%] flex items-center justify-center relative text-center">
     <input
       type={type}
       id={id}

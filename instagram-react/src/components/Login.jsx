@@ -14,7 +14,7 @@ const Login = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className=" flex flex-col justify-center mt-3
+      className="flex flex-col justify-center mt-3
          max-w-[25rem] max-h-[26.56rem] text-center items-center 
          w-[25rem] h-[26.5rem]  font-inherit text-base m-0 mb-2.5 p-2.5 relative align-normal"
       style={{
@@ -26,11 +26,16 @@ const Login = () => {
       <div
         className="flex w-[175px] h-[61px] m-9 mb-4"
         style={{
-          background: 'url("/Instagram-Logo.png") no-repeat',
-          backgroundSize: "fill",
+          backgroundImage:
+            "url('https://static.cdninstagram.com/rsrc.php/v4/y-/r/PbVHqAuqvCp.png')",
+          backgroundPosition: "0px -246px",
+          backgroundSize: "auto",
+          width: "175px",
+          height: "51px",
+          backgroundRepeat: "no-repeat",
+          display: "inline-block",
         }}
       ></div>
-
       {/* For UserInput Div */}
       <div className="flex flex-col pt-5 w-full items-center justify-center">
         {/* Username */}
@@ -51,13 +56,13 @@ const Login = () => {
         />
         {/* Login Button */}
         <button
-          className="bg-[#4cb5f9] w-[80%] text-white mt-2.5 px-2 py-1 rounded-lg "
+          className="bg-[#4cb5f9] w-[70%] text-white mt-2.5 px-2 py-1 rounded-lg "
           type="submit"
         >
           Log in
         </button>
         {/* ---OR--- */}
-        <div className="flex items-center justify-center py-4 w-[80%]">
+        <div className="flex items-center justify-center py-4 w-[70%]">
           <div className="flex-grow border-t border-gray-300"></div>
           <span className="mx-3 text-gray-500 font-medium xs:text-xs sm:text-sm md:text-sm">
             OR
@@ -66,15 +71,15 @@ const Login = () => {
         </div>
       </div>
       {/* Login with Facebook */}
-      <div className="flex flex-row items-center w-[80%] justify-center py-4">
-        <a className="text-[#0095f6] hover:text-gray-900 flex items-center">
+      <div className="flex flex-row items-center w-[70%] justify-center py-4">
+        <a className="text-[#0095f6] hover:text-gray-900 flex items-center text-sm font-semibold">
           <FaFacebook className="mr-2 size-20px" />
           Log in with Facebook
         </a>
       </div>
       {/* Forgot password */}
       <div className="flex items-center justify-center w-[80%]">
-        <a href="#" className="text-[#0095f6] hover:text-gray-900">
+        <a href="#" className="text-[#265481] hover:text-[#265481] text-sm">
           Forgot Password?
         </a>
       </div>
