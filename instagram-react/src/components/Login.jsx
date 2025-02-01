@@ -5,6 +5,7 @@ import InputField from "./InputField";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -47,13 +48,25 @@ const Login = () => {
           label="Phone number, username, or email"
         />
         {/* Password */}
-        <InputField
-          type="password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          label="Password"
-        />
+        <div className="flex flex-col  w-full items-center justify-center relative">
+          <InputField
+            type={showPassword ? "text" : "password"}
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            label="Password"
+          />
+          {/* Show Password */}
+          {password && (
+            <button
+              type="button"
+              className="absolute top-0.5 right-15 px-2 py-1 text-sm font-bold text-gray-600 hover:text-gray-900 border-none hover:border-none"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? "Hide" : "Show"}
+            </button>
+          )}
+        </div>
         {/* Login Button */}
         <button
           className="bg-[#4cb5f9] w-[70%] text-white mt-2.5 px-2 py-1 rounded-lg "

@@ -23,7 +23,7 @@ const Header = () => {
               <a href="/" className="hover:text-gray-600">
                 <button
                   className="flex content-center text-center justify-center items-center bg-blue-500
-                 text-white px-4 py-2 rounded-md xs:px-1 xs:py-1 xs:text-[.875rem] sm:px-2 sm:py-2 sm"
+                 text-white px-4 py-2 rounded-md xs:px-4 xs:py-2 xs:text-[.875rem] sm:px-4 sm:py-2 sm"
                 >
                   Log In
                 </button>

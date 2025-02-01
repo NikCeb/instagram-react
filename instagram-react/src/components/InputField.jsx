@@ -10,8 +10,8 @@ const InputField = ({ type, id, value, onChange, label }) => (
       onChange={onChange}
       placeholder={label}
       className="w-full peer text-align-left  border
-        border-gray-400 outline-gray-500 rounded inherit  
-        px-2 py-2 bg-ig-secondary-background mb-2.5 inline-block md:text-md sm:text-sm xs:text-xs"
+        border-gray-400 outline-gray-500 rounded inherit  bg-[#fafafa]
+        px-2 py-2 bg-ig-secondary-background mb-2.5 inline-block md:text-xs sm:text-xs xs:text-xs"
     />
     {value && (
       <label

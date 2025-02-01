@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      {/* <div
+      <div
         className={`flex min-h-screen min-w-full m-0 p-0 ${
           isSmallScreen ? "flex-col" : "flex-row"
         }`}
@@ -32,30 +32,34 @@ function App() {
         {!isSmallScreen && (
           <>
             <div className="flex w-full justify-center items-center">
-              <div className="w-full flex justify-center items-center">
+              <div className="flex flex-col w-full justify-center items-center">
                 <LoginPage />
               </div>
             </div>
             <div className="flex w-full justify-center items-center">
               <div className="w-full flex justify-center items-center">
-                <HomePage />
+                <HomePage
+                  showLoginHandler={showLoginHandler}
+                  hideLoginHandler={hideLoginHandler}
+                  loginPromptVisible={loginPromptVisible}
+                />
               </div>
             </div>
           </>
         )}
 
         {isSmallScreen && (
-          <div className="flex w-full justify-center items-center">
-            <HomePage />
-          </div>
+          <>
+            <div className="flex w-full justify-center items-center">
+              <HomePage
+                showLoginHandler={showLoginHandler}
+                hideLoginHandler={hideLoginHandler}
+                loginPromptVisible={loginPromptVisible}
+              />
+            </div>
+          </>
         )}
-      </div> */}
-      <LoginPage />
-      {/* <HomePage
-        showLoginHandler={showLoginHandler}
-        hideLoginHandler={hideLoginHandler}
-        loginPromptVisible={loginPromptVisible}
-      /> */}
+      </div>
     </>
   );
 }
