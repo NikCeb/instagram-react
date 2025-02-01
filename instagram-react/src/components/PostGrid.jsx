@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 
 function PostGrid({ showLoginHandler }) {
   const images = [
-    { "./public/images/DummyImage_1.jpg": Math.floor(Math.random() * 100) },
-    { "./public/images/DummyImage_2.jpg": Math.floor(Math.random() * 100) },
-    { "./public/images/DummyImage_1.jpg": Math.floor(Math.random() * 100) },
-    { "./public/images/DummyImage_2.jpg": Math.floor(Math.random() * 100) },
-    { "./public/images/DummyImage_1.jpg": Math.floor(Math.random() * 100) },
-    { "./public/images/DummyImage_2.jpg": Math.floor(Math.random() * 100) },
-    { "./public/images/DummyImage_1.jpg": Math.floor(Math.random() * 100) },
-    { "./public/images/DummyImage_2.jpg": Math.floor(Math.random() * 100) },
+    { "/images/DummyImage_1.jpg": Math.floor(Math.random() * 100) },
+    { "/images/DummyImage_2.jpg": Math.floor(Math.random() * 100) },
+    { "/images/DummyImage_1.jpg": Math.floor(Math.random() * 100) },
+    { "/images/DummyImage_2.jpg": Math.floor(Math.random() * 100) },
+    { "/images/DummyImage_1.jpg": Math.floor(Math.random() * 100) },
+    { "/images/DummyImage_2.jpg": Math.floor(Math.random() * 100) },
+    { "/images/DummyImage_1.jpg": Math.floor(Math.random() * 100) },
+    { "/images/DummyImage_2.jpg": Math.floor(Math.random() * 100) },
   ];
   return (
     <>
